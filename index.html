@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Домашка №46</h1>
+
+	<script type="application/javascript">
+		
+		var myArray = ['молоко', 'пиво', 'пиво', 'молоко', 'молоко']
+		myArray.forEach(function(item, i, array) {
+			if (item === 'пиво') {
+				console.log('плохо')
+			}
+			else if (item === 'молоко') {
+				console.log('хорошо')
+			}
+		})
+	</script>
+	<script type="application/javascript">
+		var a = [1, 5, 12, 4, 3];
+		var b = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+		var c = [3, 10, 17];
+
+		function arrayAvg(array) {
+		var sum = 0;
+		for (var i = 0; i < array.length; i++) {
+		sum += array[i];
+		}
+		console.log(sum/array.length);
+		}
+		arrayAvg(a);
+		arrayAvg(b);
+		arrayAvg(c);
+	</script>
+	<script type="application/javascript">
+
+	function myFunc() {
+	var myVar = prompt('У квадратного стола отпилили один угол. Сколько теперь углов у него стало?');
+	if (myVar === '5' || myVar === 'пять') {
+		alert('Ответ верный')
+	}
+	else {
+		alert('Ответ неверный')
+	}
+	};
+	myFunc();
+	</script> 
+	<script type="application/javascript">
+	let Duck = {name: 'Дональд', color: "белый", old: "1"};
+	Duck['toStr'] = function() {
+		console.log(this.name + ', ' +this.color+ ', '+ this.old + ' год')
+	};
+	Duck.toStr();
+	Duck['say'] = function() {
+		console.log('кря-кря')
+	};
+	Duck.say()
+	</script>
+</body>
+</html>
